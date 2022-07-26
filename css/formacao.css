@@ -1,0 +1,154 @@
+.formacao {
+  max-width: 960px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+  position: relative;
+}
+
+.formacao::before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  background: url("../img/decor-main.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: calc(50% - 18px);
+  top: -6px;
+}
+
+.faculdade {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-left: 0;
+}
+
+.intro-formacao {
+  display: grid;
+  align-content: flex-start;
+  gap: 30px;
+}
+
+.intro-formacao img {
+  justify-self: center;
+  align-self: center;
+}
+
+.formacao-item {
+  padding: 20px;
+  display: flex;
+  flex: 1;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e0ded6;
+  box-shadow: 0px 8px 8px -5px rgba(28, 26, 21, 0.1);
+  flex-direction: column;
+}
+
+.curso {
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+  color: #1c1a15;
+  font-size: 1.5rem;
+  margin-bottom: 44px;
+  flex: 1;
+}
+
+.categoria {
+  font-size: 0.875rem;
+  font-family: "Grandstander", "Fira Sans", Arial, Helvetica, sans-serif;
+  color: #a09f98;
+  margin-bottom: 10px;
+}
+
+.uni-ano {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.125rem;
+  font-family: "Grandstander", "Fira Sans", Arial, Helvetica, sans-serif;
+  color: #a09f98;
+}
+
+.cursos-title {
+  font-family: "Grandstander", "Fira Sans", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #6b6961;
+  margin-top: 60px;
+  position: relative;
+}
+
+.extras h3::before {
+  content: "";
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.cursos::before {
+  background: url("../img/icon-cursos.svg");
+  width: 40px;
+  height: 29px;
+  left: -55px;
+  top: -7px;
+}
+
+.idiomas::before {
+  width: 36px;
+  height: 36px;
+  background: url("../img/icon-idiomas.svg");
+  top: -12px;
+  left: -51px;
+}
+
+.cursos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0px;
+}
+
+.cursos-lista li {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #080806;
+  padding: 0px;
+}
+
+.cursos-lista li span {
+  font-weight: 400;
+  color: #7f7e77;
+}
+
+@media (max-width: 1000px) {
+  .formacao {
+    grid-template-columns: 1fr;
+    margin: 0 60px;
+    gap: 20px;
+  }
+
+  .intro-formacao {
+    display: block;
+    gap: 0px;
+  }
+
+  .intro-formacao .subtitulo {
+    margin: 0px;
+  }
+
+  .formacao img {
+    display: none;
+  }
+
+  .cursos-title {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .cursos-lista li {
+    font-size: 1rem;
+  }
+}

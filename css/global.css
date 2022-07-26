@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  background: #f7f4eb;
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+  color: #080806;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Grandstander", "Fira Sans", Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+.subtitulo {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #7f7e77;
+}
+
+ul {
+  padding: none;
+  list-style: none;
+  margin: none;
+}
