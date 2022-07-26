@@ -149,6 +149,9 @@
 
 @media (max-width: 700px) {
   .cursos-lista li {
-    font-size: 1rem;
+    font-size: 0.8125rem;
+  }
+  .cursos-local {
+    display: none;
   }
 }

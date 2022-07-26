@@ -102,3 +102,23 @@
     margin-bottom: 0.5rem;
   }
 }
+
+@media (max-width: 700px) {
+  .tags {
+    gap: 5px;
+    padding-inline-start: 0px;
+    align-content: start;
+    justify-content: start;
+  }
+
+  .tags li {
+    padding: 4px 8px;
+    border-width: 0.5px;
+    font-size: 0.6rem;
+  }
+
+  .exp-ano {
+    font-size: 0.7rem;
+    left: -50px;
+  }
+}
