@@ -119,6 +119,18 @@
 
   .exp-ano {
     font-size: 0.7rem;
-    left: -50px;
+    left: -12px;
+  }
+
+  .experiencia {
+    margin: 0px;
+  }
+
+  .exp-texto {
+    font-size: 1rem;
+  }
+
+  .exp-titulo {
+    font-size: 1rem;
   }
 }
